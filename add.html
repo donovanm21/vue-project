@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>FurniShop - Add Product</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    <link href="includes/css/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="includes/css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <header>
+        <div class="collapse header-color" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-white">FurniShop is a small community store offered to locals looking for furniture as well as enable locals to sell furniture they no longer need.</p>
+              </div>
+              <div class="col-sm-2 offset-md-1 py-4">
+                <h4 class="text-white">Menu</h4>
+                <ul class="list-unstyled">
+                  <li><a href="add.html" class="text-white">Add Product</a></li>
+                  <li><a href="checkout.html" class="text-white">Checkout</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-2 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Twitter</a></li>
+                  <li><a href="#" class="text-white">Facebook</a></li>
+                  <li><a href="#" class="text-white">Email</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark header-color shadow-sm">
+          <div class="container">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+              <img src="includes/img/icon.png" width="35" height="35" class="icon me-1">
+              <strong>FurniShop</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+  <div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="includes/img/logo.jpg" alt="" width="300">
+      <h2 id="heading-label">Add Product</h2>
+      <p class="lead" id="heading-sub-label">Please complete the below form with your product details</p>
+    </div>
+
+    <div class="row">
+      <div class="">
+        <h4 class="mb-3" id="form-label">New Product</h4>
+        <form class="needs-validation" novalidate>
+          <!-- Type of Furniture -->
+          <div class="">
+            <label for="furniture-type" class="form-label">Furniture Type</label>
+            <input type="text" class="form-control" id="furniture-type" placeholder="Cupboard" value="" required>
+            <div class="invalid-feedback">
+              Valid furniture type is required.
+            </div>
+          </div>
+          <!-- Colour of Item -->
+          <div class="row g-3">
+            <div class="">
+              <label for="furniture-colour" class="form-label mt-2">Furniture Colour</label>
+              <input type="text" class="form-control" id="furniture-colour" placeholder="Dark Brown" value="" required>
+              <div class="invalid-feedback">
+                Valid furniture colour is required.
+              </div>
+            </div>
+            <!-- Furniture Condition-->
+            <div class="col-12">
+              <label for="furniture-condition" class="form-label">Furniture Condition</label>
+              <select class="form-select has-validation" aria-label="furniture-condition">
+                <option selected>Select Condition</option>
+                <option value="1">As New</option>
+                <option value="2">Good</option>
+                <option value="3">Some Scratches</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid option.
+              </div>
+            </div>
+            <!-- Can Deliver -->
+            <div class="col-12">
+                <label for="furniture-delivery" class="form-label">Furniture Delivery</label>
+                <select class="form-select has-validation" aria-label="furniture-delivery">
+                  <option selected>Select Option</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid option.
+                </div>
+              </div>
+              <!-- Available From -->
+              <div class="col-12">
+                <label for="furniture-availability" class="form-label">Available From</label>
+                <div class="input-group has-validation">
+                  <input type="date" class="form-control" id="furniture-availability" required>
+                <div class="invalid-feedback">
+                    Please select a valid date.
+                  </div>
+                </div>
+              </div>
+            <!-- Description -->
+            <div class="col-12">
+              <label for="furniture-description" class="form-label" id="province-of-birth-label">Province of Country of Birth</label>
+              <input type="text" class="form-control" id="furniture-description" placeholder="West District" required>
+              <textarea></textarea>
+              <div class="invalid-feedback">
+                Please enter your province of birth.
+              </div>
+            </div>
+            <!-- City of Birth -->
+            <div class="col-12">
+              <label for="city-of-birth" class="form-label" id="city-of-birth-label">City of Birth</label>
+              <input type="text" class="form-control" id="city-of-birth" placeholder="Kinshasa" required>
+              <div class="invalid-feedback">
+                Please enter your city of birth.
+              </div>
+            </div>
+            <!-- Current Nationality -->
+            <div class="col-12">
+              <label for="nationality" class="form-label" id="nationality-label">Current Nationality</label>
+              <input type="text" class="form-control" id="nationality" placeholder="Congolese" required>
+              <div class="invalid-feedback">
+                Please enter your nationality.
+              </div>
+            </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit" id="submit-label">Add Product</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017–2021 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+    <script src="includes/js/bootstrap.bundle.min.js"></script>
+    <script src="includes/js/form-validation.js"></script>
+    <script src="includes/js/vue.js"></script>
+</body>
+</html>
